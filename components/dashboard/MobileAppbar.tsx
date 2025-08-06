@@ -33,9 +33,9 @@ export default function MobileAppBar({ user }: Props) {
               onClick={() => setOpenLeftDrawer(!openLeftDrawer)}
             />
           </div>
-          {/* <Link href="/secure/dashboard">
+          <Link href="/secure/dashboard">
             <Image src={logoimg} alt="logo" width={200} height={50} />
-          </Link> */}
+          </Link>
           <PopOver element={<Avatar src={`${user?.imageUrl || ""} `} />} />
         </div>
       </AppBar>

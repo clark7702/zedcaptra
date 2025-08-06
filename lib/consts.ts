@@ -14,8 +14,8 @@ export const adminRoutes = ["/admin", "/admin/*"];
 
 export const publicRoutes = ["/", "/about-us", "/api/admin/user/create"];
 
-export const AppName = "Zedcaptra Holdings";
-export const AppAuthor = "Zedcaptra Holdings";
+export const AppName = "ZedCaptra Holdings";
+export const AppAuthor = "ZedCaptra Holdings";
 
 export const contactUs = "contact@zedcaptra.com";
 

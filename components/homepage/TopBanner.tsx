@@ -3,8 +3,10 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { bankEmail, bankPhone, bankWorkingHours } from "../../constants/Settings";
 import { motion } from "motion/react"
 import { Box, Container, Typography, Stack } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const TopBanner = () => {
+  const router = useRouter();
   return (
     <Box 
       sx={{
@@ -64,7 +66,7 @@ const TopBanner = () => {
           </Stack>
           
           <Stack direction="row" spacing={2} alignItems="center">
-            <motion.div whileHover={{ y: -1 }}>
+            <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }} onClick={() => router.push('/auth/signin')}>
               <Typography 
                 variant="caption" 
                 color="primary"
@@ -80,7 +82,7 @@ const TopBanner = () => {
               </Typography>
             </motion.div>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-              <motion.div whileHover={{ y: -1 }}>
+              <motion.div whileHover={{ y: -1 }} onClick={() => router.push('/auth/signin')}>
                 <Typography 
                   variant="caption" 
                   color="primary"

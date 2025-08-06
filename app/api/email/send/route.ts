@@ -2,6 +2,8 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
+const env = process.env;
+
 const EmailSchema = z.object({
   to: z.string().email(),
   from: z.string(),
@@ -10,12 +12,12 @@ const EmailSchema = z.object({
 });
 
 const transporter = nodemailer.createTransport({
-  host: "mail.privateemail.com",
-  port: 465,
+  host: env.NEXT_PUBLIC_SMTP_HOST,
+  port: env.NEXT_PUBLIC_SMTP_PORT,
   secure: true,
   auth: {
-    user: "contact@trusovia.com",
-    pass: "ct@Secure2025",
+    user: env.NEXT_PUBLIC_SMTP_USER,
+    pass: env.NEXT_PUBLIC_SMTP_PASSWORD,
   },
 });
 

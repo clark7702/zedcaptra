@@ -1,4 +1,4 @@
-export const bankName = "Zedcaptra Holdings";
+export const bankName = "ZEDCaptra Holdings";
 export const bankYear = "1992";
 export const bankAddress = "123 Main Street, City, Country";
 export const bankEmail = "contact@zedcaptra.com";

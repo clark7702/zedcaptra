@@ -5,14 +5,15 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { AppName } from '@/lib/consts';
-
+import logoImage from '@/assets/brand/logo.png';
 import { motion, AnimatePresence } from "motion/react"
+import Image from 'next/image';
 
 const navItems = [
-  { title: 'Personal', path: '/personal-banking' },
-  { title: 'Business', path: '/business-banking' },
-  { title: 'Wealth', path: '/wealth-management' },
+  { title: 'Personal', path: '/banking/personal' },
+  { title: 'Business', path: '/banking/business' },
+  { title: 'Wealth', path: '/banking/wealth' },
+  { title: 'Loans', path: '/banking/loans' },
   { title: 'About', path: '/about' },
   { title: 'Insights', path: '/insights' },
 ];
@@ -86,18 +87,7 @@ const DesktopNav = () => {
                 },
               }}
             >
-              <Typography
-                variant="h4"
-                sx={{
-                  fontWeight: 700,
-                  background: 'linear-gradient(90deg, #003366 0%, #0066CC 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  letterSpacing: '-0.5px',
-                }}
-              >
-                {AppName}
-              </Typography>
+             <Image src={logoImage} alt="Logo" width={150} height={150} />
             </Box>
           </Link>
 

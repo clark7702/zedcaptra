@@ -2,7 +2,6 @@ import { redirect } from "next/navigation";
 import SignInForm from "../../../components/login/SignInForm";
 import { getUser } from "../../../lib/actions";
 
-import imgSrc from "../../../assets/images/man-carrying-son.jpeg";
 import logoImage from "../../../assets/brand/logo.png";
 import { Suspense } from "react";
 import Image from "next/image";
@@ -16,11 +15,7 @@ export default async function SignIn() {
   if (user) redirect(DEFAULT_LOGIN_REDIRECT_URL);
 
   return (
-    <main className="h-screen grid grid-cols-1 lg:grid-cols-2">
-      <div className="relative hidden lg:block">
-        <Image src={imgSrc} fill alt="man holding a child" />
-      </div>
-
+    <main className="h-screen grid grid-cols-1">
       <div className="flex flex-col items-center justify-center space-y-4 lg:space-y-6">
         <div className="mb-5">
           <Link href={`/`}>
