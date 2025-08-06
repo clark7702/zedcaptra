@@ -1,9 +1,10 @@
 "use client";
 
 import { Box, Container, Typography, Link, Grid, IconButton, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react"
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { bankName, bankAddress, bankPhone, bankEmail } from "../../constants/Settings";
+
 
 const year = new Date().getFullYear();
 

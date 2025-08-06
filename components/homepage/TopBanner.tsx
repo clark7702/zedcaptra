@@ -1,8 +1,8 @@
 "use client";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { bankEmail, bankPhone, bankWorkingHours } from "../../constants/Settings";
-import { motion } from "framer-motion";
-import { Box, Container, Typography, Stack, IconButton } from "@mui/material";
+import { motion } from "motion/react"
+import { Box, Container, Typography, Stack } from "@mui/material";
 
 const TopBanner = () => {
   return (

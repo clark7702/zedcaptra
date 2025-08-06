@@ -1,6 +1,6 @@
 "use client";
 import { Box, Container, Typography, Grid, Card, CardContent, CardActionArea, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react";
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 import { 

@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Container, Typography, Grid, Button, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaMoneyBillTransfer, FaMobileScreen, FaClock, FaArrowRight } from 'react-icons/fa6';

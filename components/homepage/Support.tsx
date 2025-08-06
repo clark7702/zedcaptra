@@ -1,11 +1,12 @@
 "use client";
 
 import { Box, Container, Typography, Button, Grid, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaHeadset, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaClock } from 'react-icons/fa';
 import { MdOutlineSupportAgent } from 'react-icons/md';
 import supportImage from "../../assets/images/SupportChat-removebg-preview.png";
+
+import { motion } from "motion/react"
 
 const supportItems = [
   {

@@ -1,10 +1,10 @@
 "use client";
 
 import { Box, Typography, Accordion, AccordionSummary, AccordionDetails, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
-import { ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
 import { FaChevronDown } from 'react-icons/fa';
 import { bankPhone, bankEmail, bankName } from "../../constants/Settings";
+
+import { motion } from "motion/react"
 
 const faqItems = [
   {

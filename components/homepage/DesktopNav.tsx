@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { Box, Container, Button, Typography, Stack, IconButton } from '@mui/material';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { AppName } from '@/lib/consts';
+
+import { motion, AnimatePresence } from "motion/react"
 
 const navItems = [
   { title: 'Personal', path: '/personal-banking' },

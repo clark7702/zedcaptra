@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Container, Typography, Grid, Button, Stack, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react"
 import Image from 'next/image';
 import img from "../../assets/images/STATISTICS.webp";
 import { FiTrendingUp, FiPieChart, FiDollarSign, FiBarChart2 } from 'react-icons/fi';

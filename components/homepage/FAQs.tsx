@@ -1,11 +1,12 @@
 "use client";
 
 import { Box, Container, Typography, useTheme } from '@mui/material';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import FaqAccordion from "./FaqAccordion";
 import faqsimg from "../../assets/images/FAQs.svg";
 import { FaQuestionCircle } from 'react-icons/fa';
+
+import { motion } from "motion/react"
 
 const FAQs = () => {
   const theme = useTheme();
