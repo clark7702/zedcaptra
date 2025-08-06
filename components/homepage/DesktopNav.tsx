@@ -14,8 +14,7 @@ const navItems = [
   { title: 'Business', path: '/banking/business' },
   { title: 'Wealth', path: '/banking/wealth' },
   { title: 'Loans', path: '/banking/loans' },
-  { title: 'About', path: '/about' },
-  { title: 'Insights', path: '/insights' },
+  { title: 'About Us', path: '/about-us' },
 ];
 
 const DesktopNav = () => {
@@ -134,7 +133,7 @@ const DesktopNav = () => {
 
           {/* CTA Buttons */}
           <Stack direction="row" spacing={2} sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Link href="/contact" passHref>
+            <Link href="/auth/signin" passHref>
               <Button
                 variant="outlined"
                 size="large"
@@ -225,7 +224,7 @@ const DesktopNav = () => {
                   </Link>
                 ))}
                 <Stack direction="column" spacing={2} sx={{ mt: 2, px: 1 }}>
-                  <Link href="/contact" passHref>
+                  <Link href="/auth/signin" passHref>
                     <Button
                       fullWidth
                       variant="outlined"

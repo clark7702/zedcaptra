@@ -17,37 +17,34 @@ const Footer = () => {
     {
       title: 'Company',
       links: [
-        { label: 'About Us', url: '/about' },
-        { label: 'Careers', url: '/careers' },
-        { label: 'News & Media', url: '/news' },
-        { label: 'Contact Us', url: '/contact' },
+        { label: 'About Us', url: '/about-us' },
+        { label: 'Contact Us', url: '#' },
       ]
     },
     {
       title: 'Banking',
       links: [
-        { label: 'Personal Banking', url: '/personal' },
-        { label: 'Business Banking', url: '/business' },
-        { label: 'Wealth Management', url: '/wealth' },
-        { label: 'Loans & Mortgages', url: '/loans' },
+        { label: 'Personal Banking', url: '/banking/personal' },
+        { label: 'Business Banking', url: '/banking/business' },
+        { label: 'Wealth Management', url: '/banking/wealth' },
+        { label: 'Loans & Mortgages', url: '/banking/loans' },
       ]
     },
     {
       title: 'Resources',
       links: [
-        { label: 'Online Banking', url: '/online-banking' },
-        { label: 'Mobile App', url: '/mobile' },
-        { label: 'Rates', url: '/rates' },
-        { label: 'Security Center', url: '/security' },
+        { label: 'Online Banking', url: '/auth/signin' },
+        { label: 'Mobile App', url: '/auth/signin' },
+        { label: 'Security Center', url: '/auth/signin' },
       ]
     },
     {
       title: 'Legal',
       links: [
-        { label: 'Privacy Policy', url: '/privacy' },
-        { label: 'Terms of Use', url: '/terms' },
-        { label: 'Cookie Policy', url: '/cookies' },
-        { label: 'Disclosures', url: '/disclosures' },
+        { label: 'Privacy Policy', url: '#' },
+        { label: 'Terms of Use', url: '#' },
+        { label: 'Cookie Policy', url: '#' },
+        { label: 'Disclosures', url: '#' },
       ]
     }
   ];
