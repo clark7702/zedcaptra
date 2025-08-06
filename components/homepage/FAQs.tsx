@@ -63,7 +63,7 @@ const FAQs = () => {
             }}
           >
             Find answers to common questions about our services, accounts, and more.
-            Can't find what you're looking for? Our support team is here to help.
+            Can&apos;t find what you&apos;re looking for? Our support team is here to help.
           </Typography>
         </Box>
 
