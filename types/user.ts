@@ -1,0 +1,36 @@
+export type User = {
+  accountNumber: string;
+  accountStatus: string;
+  accountType: string;
+  address: string;
+  authPin: string;
+  availableBalance: number;
+  cards: any[];
+  irsCode: string;
+  currency: string;
+  dateOfBirth: string;
+  email: string;
+  firstName: string;
+  gender: string;
+  imageUrl: string;
+  maaCode: string;
+  lastName: string;
+  ledgerBalance: number;
+  maritalStatus: string;
+  middleName: string;
+  occupation: string;
+  openingDate: string;
+  password: string;
+  phoneNumber: string;
+  photo: { asset: any; _type: string };
+  statements: any[];
+  stopTransfer: boolean;
+  amlCode: string;
+  imfCode: string;
+  fedCode: string;
+  taxCode: string;
+
+  userName: string;
+  _createdAt: string;
+  _id: string;
+};
